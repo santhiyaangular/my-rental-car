@@ -1,0 +1,8 @@
+<mat-form-field appearance="fill">
+  <mat-label>Choose {{filterType}}</mat-label>
+  <mat-select (selectionChange)="onSelection($event.value)">
+    <mat-option value="none">None</mat-option>
+    <mat-option *ngFor="let filter of filterInputData" [value]="filter">{{filter}}</mat-option>
+  </mat-select>
+</mat-form-field>
+

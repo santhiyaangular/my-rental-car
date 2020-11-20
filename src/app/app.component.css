@@ -1,0 +1,32 @@
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+article {
+  float: left;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 100vh; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background-color: #777;
+  text-align: center;
+  color: white;
+}

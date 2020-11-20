@@ -1,0 +1,9 @@
+
+<mat-grid-list [cols]="5" rowHeight="100px">
+  <mat-grid-tile
+    *ngFor="let car of carList"
+    [rowspan]="2">
+    <app-car-card [carModel]="car"></app-car-card>
+  </mat-grid-tile>
+</mat-grid-list>
+<!--<app-car-card [carModel]="car" *ngFor="let car of carList"></app-car-card>-->

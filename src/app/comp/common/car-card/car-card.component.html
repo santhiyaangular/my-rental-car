@@ -1,0 +1,23 @@
+<!--<p>{{carModel.model }}</p>-->
+<!--<p>{{carModel.brand }}</p>-->
+<!--<p>{{carModel.year }}</p>-->
+<!--<p>{{carModel.miles }}</p>-->
+<!--<p>{{carModel.price }}</p>-->
+<!--<img class="car-image" [src]="carModel.image">-->
+
+<div class="card">
+  <a (click)="onClickCard(carModel)" class="link-button">
+  <img class="image" [src]="carModel.image" alt="Avatar">
+  <div class="container">
+    <h4><b>{{carModel.brand}} {{carModel.model}} {{carModel.year}}</b></h4>
+    <p>{{carModel.miles}}mls | ${{carModel.price}}</p>
+  </div>
+  </a>
+</div>
+<!-- 
+<button type="button"(click)="onClickCard(carModel)">
+  <div class="container">
+    <h4><b>{{carModel.brand}} {{carModel.model}} {{carModel.year}}</b></h4>
+    <p>{{carModel.miles}}mls | ${{carModel.price}}</p>
+  </div>
+</button> -->
